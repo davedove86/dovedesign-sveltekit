@@ -24,7 +24,7 @@
 
 				<!-- TODO Add ReCaptcha -->
 
-				<button type="submit" formaction="">Submit</button>
+				<button type="submit">Submit</button>
 			</form>
 			<div class="grid-col-2 contact-grid">
 				<div class="contact-grid-item">
