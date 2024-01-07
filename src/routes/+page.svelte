@@ -1,5 +1,8 @@
 <script>
 	import Contact from './Contact.svelte';
+	import testimonialData from './data/testimonialData';
+	// const currentYear = new Date().getFullYear(); //variable containing current year
+	// document.getElementById('currentYear').innerHTML = currentYear; //set specified HTML element to currentYear variable
 </script>
 
 <header>
@@ -162,50 +165,25 @@
 		<h2>Happy Clients</h2>
 		<p>Hear what our clients have to say about our Webflow services</p>
 		<div class="grid-col-2 testimonials">
-			<div>
-				<div class="star-wrap">
-					<img src="/images/star.svg" alt="blue star" />
-					<img src="/images/star.svg" alt="blue star" />
-					<img src="/images/star.svg" alt="blue star" />
-					<img src="/images/star.svg" alt="blue star" />
-					<img src="/images/star.svg" alt="blue star" />
-				</div>
-				<p>
-					"I cannot praise Dove Design enough. From the very start of this project they were very
-					professional, providing great support, advice and guidance at all times. The process was
-					quick and completed before the deadline and the final product was brilliant. Thank you so
-					much for everything."
-				</p>
-				<div class="testimonial-item">
-					<img src="/images/cpm-logo.png" alt="Community Peer Mentors Logo" />
-					<div class="testimonial-text">
-						<p class="bold">Jim Cunningham</p>
-						<p>Community Peer Mentors</p>
+			{#each testimonialData as testimonial}
+				<div>
+					<div class="star-wrap">
+						<img src="/images/star.svg" alt="blue star" />
+						<img src="/images/star.svg" alt="blue star" />
+						<img src="/images/star.svg" alt="blue star" />
+						<img src="/images/star.svg" alt="blue star" />
+						<img src="/images/star.svg" alt="blue star" />
+					</div>
+					<p>{testimonial.quote}</p>
+					<div class="testimonial-item">
+						<img src={testimonial.crest} alt="Community Peer Mentors Logo" />
+						<div class="testimonial-text">
+							<p class="bold">{testimonial.name}</p>
+							<p>{testimonial.title}</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div>
-				<div class="star-wrap">
-					<img src="/images/star.svg" alt="blue star" />
-					<img src="/images/star.svg" alt="blue star" />
-					<img src="/images/star.svg" alt="blue star" />
-					<img src="/images/star.svg" alt="blue star" />
-					<img src="/images/star.svg" alt="blue star" />
-				</div>
-				<p>
-					"We commissioned our new website with Dove Design and they have been fantastic to work
-					with on this major project. They were brilliant to work with during development of the
-					project, were quick to respond to any queries we had and were always available to contact.
-					We would recommend to anyone."
-				</p>
-				<div class="testimonial-item">
-					<img src="/images/pcc-logo.png" alt="Community Peer Mentors Logo" />
-					<div class="testimonial-text">
-						<p class="bold">Steve White</p>
-						<p>Durham Police & Crime Commissioner</p>
-					</div>
-				</div>
-			</div>
+			{/each}
 		</div>
 	</div>
 </section>
@@ -237,11 +215,12 @@
 		left: 550px;
 		top: 50px;
 		height: 100%;
-		width: 100%;
+		/* width: 100%; */
 	}
 
 	.button-wrap {
 		display: flex;
+		align-items: center;
 		gap: 1rem;
 	}
 
@@ -271,7 +250,7 @@
 	}
 
 	.cta-full-width {
-		background-image: url(/images/cta-banner.webp);
+		background-image: url(/images/cta-banner.jpg);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -322,5 +301,24 @@
 
 	.star-wrap img {
 		width: 24px;
+	}
+
+	@media screen and (max-width: 961px) {
+		.home-hero {
+			display: flex;
+			flex-direction: column;
+			gap: 3rem;
+		}
+		header img {
+			position: static;
+			left: 550px;
+			top: 50px;
+			height: 100%;
+			width: 100%;
+		}
+		.home-hero-icon-grid {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 </style>
