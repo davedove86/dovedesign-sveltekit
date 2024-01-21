@@ -1,1 +1,5 @@
-<h1>Contact Us</h1>
+<script>
+	import Contact from '../Contact.svelte';
+</script>
+
+<Contact />

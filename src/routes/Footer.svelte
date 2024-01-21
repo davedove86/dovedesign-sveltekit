@@ -20,9 +20,7 @@
 			>
 		</div>
 		<div class="center-align-grid">
-			<a href="https://www.dovedesign.io" target="_blank"
-				><p>&copy;<span id="currentYear">2024</span> Dove Design Ltd</p></a
-			>
+			<p>&copy;<span id="currentYear">2024</span> Dove Design Ltd</p>
 			<a href="/" target="_blank"><p>Privacy Policy</p></a>
 			<a href="/" target="_blank">Cookies Policy</a>
 		</div>

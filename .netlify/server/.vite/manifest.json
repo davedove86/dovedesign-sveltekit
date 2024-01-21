@@ -7,6 +7,19 @@
     "isEntry": true,
     "src": ".svelte-kit/generated/server/internal.js"
   },
+  "Contact.css": {
+    "file": "_app/immutable/assets/Contact.7b95fcd9.css",
+    "src": "Contact.css"
+  },
+  "_Contact.js": {
+    "css": [
+      "_app/immutable/assets/Contact.7b95fcd9.css"
+    ],
+    "file": "chunks/Contact.js",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
   "_internal.js": {
     "file": "chunks/internal.js",
     "imports": [
@@ -37,12 +50,12 @@
     "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js"
   },
   "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout.018d58e5.css",
+    "file": "_app/immutable/assets/_layout.439148dc.css",
     "src": "src/routes/+layout.css"
   },
   "src/routes/+layout.svelte": {
     "css": [
-      "_app/immutable/assets/_layout.018d58e5.css"
+      "_app/immutable/assets/_layout.439148dc.css"
     ],
     "file": "entries/pages/_layout.svelte.js",
     "imports": [
@@ -52,16 +65,17 @@
     "src": "src/routes/+layout.svelte"
   },
   "src/routes/+page.css": {
-    "file": "_app/immutable/assets/_page.f67680a7.css",
+    "file": "_app/immutable/assets/_page.ccc95633.css",
     "src": "src/routes/+page.css"
   },
   "src/routes/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.f67680a7.css"
+      "_app/immutable/assets/_page.ccc95633.css"
     ],
     "file": "entries/pages/_page.svelte.js",
     "imports": [
-      "_ssr.js"
+      "_ssr.js",
+      "_Contact.js"
     ],
     "isEntry": true,
     "src": "src/routes/+page.svelte"
@@ -69,7 +83,8 @@
   "src/routes/contact/+page.svelte": {
     "file": "entries/pages/contact/_page.svelte.js",
     "imports": [
-      "_ssr.js"
+      "_ssr.js",
+      "_Contact.js"
     ],
     "isEntry": true,
     "src": "src/routes/contact/+page.svelte"
@@ -82,7 +97,14 @@
     "isEntry": true,
     "src": "src/routes/faq/+page.svelte"
   },
+  "src/routes/work/+page.css": {
+    "file": "_app/immutable/assets/_page.94bdf181.css",
+    "src": "src/routes/work/+page.css"
+  },
   "src/routes/work/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.94bdf181.css"
+    ],
     "file": "entries/pages/work/_page.svelte.js",
     "imports": [
       "_ssr.js",
