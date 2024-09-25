@@ -4,7 +4,7 @@
 		<h2>How can we help?</h2>
 		<p>We're here to answer any questions you may have. Contact us today!</p>
 		<div class="grid-col-2">
-			<form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+			<form name="contact" netlify>
 				<div>
 					<label for="text">Name</label>
 					<input id="text" type="text" name="name" placeholder="Name" required />
