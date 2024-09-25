@@ -8,7 +8,7 @@
     "src": ".svelte-kit/generated/server/internal.js"
   },
   "Contact.css": {
-    "file": "_app/immutable/assets/Contact.763fdd41.css",
+    "file": "_app/immutable/assets/Contact.a9a8610e.css",
     "src": "Contact.css"
   },
   "Testimonials.css": {
@@ -17,7 +17,7 @@
   },
   "_Contact.js": {
     "css": [
-      "_app/immutable/assets/Contact.763fdd41.css"
+      "_app/immutable/assets/Contact.a9a8610e.css"
     ],
     "file": "chunks/Contact.js",
     "imports": [
