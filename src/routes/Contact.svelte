@@ -5,25 +5,15 @@
 		<p>We're here to answer any questions you may have. Contact us today!</p>
 		<div class="grid-col-2">
 			<form name="contact" netlify>
-				<div>
-					<label for="text">Name</label>
-					<input id="text" type="text" name="name" placeholder="Name" required />
-				</div>
-				<div>
-					<label for="email">Email</label>
-					<!-- TODO add a default subject -->
-					<input id="email" type="email" name="email" placeholder="Email" required />
-				</div>
-				<div>
-					<label for="phone">Phone</label>
-					<input id="phone" type="Phone" name="phone" placeholder="Phone" />
-				</div>
-				<div>
-					<label for="textarea">Message</label>
-					<textarea id="textarea" type="textarea" name="message" placeholder="Message" required />
-				</div>
-				<div data-netlify-recaptcha="true" />
-				<button type="submit">Submit Form</button>
+				<p>
+					<label>Name <input type="text" name="name" /></label>
+				</p>
+				<p>
+					<label>Email <input type="email" name="email" /></label>
+				</p>
+				<p>
+					<button type="submit">Send</button>
+				</p>
 			</form>
 
 			<div class="grid-col-2 contact-grid">
