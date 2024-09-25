@@ -8,7 +8,7 @@
     "src": ".svelte-kit/generated/server/internal.js"
   },
   "Contact.css": {
-    "file": "_app/immutable/assets/Contact.a9a8610e.css",
+    "file": "_app/immutable/assets/Contact.763fdd41.css",
     "src": "Contact.css"
   },
   "Testimonials.css": {
@@ -17,7 +17,7 @@
   },
   "_Contact.js": {
     "css": [
-      "_app/immutable/assets/Contact.a9a8610e.css"
+      "_app/immutable/assets/Contact.763fdd41.css"
     ],
     "file": "chunks/Contact.js",
     "imports": [
@@ -80,6 +80,11 @@
   "src/routes/+page.css": {
     "file": "_app/immutable/assets/_page.7d2150e2.css",
     "src": "src/routes/+page.css"
+  },
+  "src/routes/+page.js": {
+    "file": "entries/pages/_page.js",
+    "isEntry": true,
+    "src": "src/routes/+page.js"
   },
   "src/routes/+page.svelte": {
     "css": [

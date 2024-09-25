@@ -4,16 +4,20 @@
 		<h2>How can we help?</h2>
 		<p>We're here to answer any questions you may have. Contact us today!</p>
 		<div class="grid-col-2">
-			<form name="contact" netlify>
-				<p>
-					<label>Name <input type="text" name="name" /></label>
-				</p>
-				<p>
-					<label>Email <input type="email" name="email" /></label>
-				</p>
-				<p>
-					<button type="submit">Send</button>
-				</p>
+			<form
+				name="netlify-form-example"
+				method="POST"
+				netlify-honeypot="bot-field"
+				data-netlify="true"
+			>
+				<input type="hidden" name="form-name" value="netlify-form-example" />
+				<label for="name">Name</label>
+				<input name="name" id="name" required placeholder="Name" type="text" />
+				<label for="email">Email</label>
+				<input name="email" id="email" required placeholder="Email" type="email" />
+				<label for="message">Message</label>
+				<input name="message" id="message" required placeholder="Message" type="text" />
+				<input type="submit" value="Submit" />
 			</form>
 
 			<div class="grid-col-2 contact-grid">
