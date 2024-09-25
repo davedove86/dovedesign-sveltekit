@@ -10,27 +10,25 @@
 		<div class="grid-col-2">
 			<form name="contact" method="POST" data-netlify="true">
 				<input type="hidden" name="form-name" value="contact" />
+				<div>
+					<label for="text">Name</label>
+					<input id="text" type="text" name="name" placeholder="Name" required />
+				</div>
+				<div>
+					<label for="email">Email</label>
+					<!-- TODO add a default subject -->
+					<input id="email" type="email" name="email" placeholder="Email" required />
+				</div>
+				<div>
+					<label for="phone">Phone</label>
+					<input id="phone" type="Phone" name="phone" placeholder="Phone" />
+				</div>
+				<div>
+					<label for="textarea">Message</label>
+					<textarea id="textarea" type="textarea" name="message" placeholder="Message" required />
+				</div>
 
-				<p>
-					<label>Your Name: <input type="text" name="name" /></label>
-				</p>
-				<p>
-					<label>Your Email: <input type="email" name="email" /></label>
-				</p>
-				<p>
-					<label
-						>Your Role: <select name="role[]" multiple>
-							<option value="leader">Leader</option>
-							<option value="follower">Follower</option>
-						</select></label
-					>
-				</p>
-				<p>
-					<label>Message: <textarea name="message" /></label>
-				</p>
-				<p>
-					<button type="submit">Send</button>
-				</p>
+				<button type="submit">Send</button>
 			</form>
 
 			<div class="grid-col-2 contact-grid">
