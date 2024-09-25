@@ -7,10 +7,10 @@ function __memo(fn) {
 return {
 	appDir: "_app",
 	appPath: "_app",
-	assets: new Set(["android-chrome-192x192.png","android-chrome-256x256.png","apple-touch-icon.png","browserconfig.xml","favicon-16x16.png","favicon-32x32.png","favicon.ico","favicon.png","images/.DS_Store","images/cpm-logo.png","images/cta-banner.jpg","images/design.svg","images/email.svg","images/flowga-portfolio.png","images/footer-logo.svg","images/hosting.svg","images/linkedin-footer.svg","images/linkedin.svg","images/medal.svg","images/nav/logo-only.svg","images/pcc-logo.png","images/phone.svg","images/responsive.svg","images/section-image.webp","images/star.svg","images/tick.svg","mstile-150x150.png","safari-pinned-tab.svg","site.webmanifest"]),
+	assets: new Set(["android-chrome-192x192.png","android-chrome-256x256.png","apple-touch-icon.png","browserconfig.xml","favicon-16x16.png","favicon-32x32.png","favicon.ico","favicon.png","images/cpm-logo.png","images/cta-banner.jpg","images/design.svg","images/email.svg","images/flowga-portfolio.png","images/footer-logo.svg","images/home-hero.png","images/hosting.svg","images/linkedin-footer.svg","images/linkedin.svg","images/medal.svg","images/nav/logo-only.svg","images/pcc-logo.png","images/phone.svg","images/responsive.svg","images/section-image.webp","images/star.svg","images/tick.svg","images/work/cpm-portfolio.png","images/work/flowga-portfolio.png","images/work/jandb-portfolio.png","images/work/pcc-portfolio.png","images/work/vcas-portfolio.png","mstile-150x150.png","safari-pinned-tab.svg","site.webmanifest"]),
 	mimeTypes: {".png":"image/png",".xml":"application/xml",".jpg":"image/jpeg",".svg":"image/svg+xml",".webp":"image/webp",".webmanifest":"application/manifest+json"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.03091e0a.js","app":"_app/immutable/entry/app.8b173917.js","imports":["_app/immutable/entry/start.03091e0a.js","_app/immutable/chunks/scheduler.63274e7e.js","_app/immutable/chunks/singletons.807caba2.js","_app/immutable/entry/app.8b173917.js","_app/immutable/chunks/scheduler.63274e7e.js","_app/immutable/chunks/index.a2cc6748.js"],"stylesheets":[],"fonts":[]},
+		client: {"start":"_app/immutable/entry/start.71bc60b2.js","app":"_app/immutable/entry/app.79aa64a1.js","imports":["_app/immutable/entry/start.71bc60b2.js","_app/immutable/chunks/scheduler.63274e7e.js","_app/immutable/chunks/singletons.6895a682.js","_app/immutable/entry/app.79aa64a1.js","_app/immutable/chunks/scheduler.63274e7e.js","_app/immutable/chunks/index.a2cc6748.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
@@ -18,7 +18,10 @@ return {
 			__memo(() => import('./nodes/3.js')),
 			__memo(() => import('./nodes/4.js')),
 			__memo(() => import('./nodes/5.js')),
-			__memo(() => import('./nodes/6.js'))
+			__memo(() => import('./nodes/6.js')),
+			__memo(() => import('./nodes/7.js')),
+			__memo(() => import('./nodes/8.js')),
+			__memo(() => import('./nodes/9.js'))
 		],
 		routes: [
 			{
@@ -50,10 +53,31 @@ return {
 				endpoint: null
 			},
 			{
-				id: "/work/flowga-studios",
-				pattern: /^\/work\/flowga-studios\/?$/,
+				id: "/work/community-peer-mentors",
+				pattern: /^\/work\/community-peer-mentors\/?$/,
 				params: [],
 				page: { layouts: [0,], errors: [1,], leaf: 6 },
+				endpoint: null
+			},
+			{
+				id: "/work/durham-pcc",
+				pattern: /^\/work\/durham-pcc\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 7 },
+				endpoint: null
+			},
+			{
+				id: "/work/jet-and-ben",
+				pattern: /^\/work\/jet-and-ben\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 8 },
+				endpoint: null
+			},
+			{
+				id: "/work/victim-care-and-advice-service",
+				pattern: /^\/work\/victim-care-and-advice-service\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 9 },
 				endpoint: null
 			}
 		],

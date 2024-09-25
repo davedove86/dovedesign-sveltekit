@@ -1,4 +1,6 @@
-export const manifest = (() => {
+import { init } from '../serverless.js';
+
+export const handler = init((() => {
 function __memo(fn) {
 	let value;
 	return () => value ??= (value = fn());
@@ -12,16 +14,16 @@ return {
 	_: {
 		client: {"start":"_app/immutable/entry/start.71bc60b2.js","app":"_app/immutable/entry/app.79aa64a1.js","imports":["_app/immutable/entry/start.71bc60b2.js","_app/immutable/chunks/scheduler.63274e7e.js","_app/immutable/chunks/singletons.6895a682.js","_app/immutable/entry/app.79aa64a1.js","_app/immutable/chunks/scheduler.63274e7e.js","_app/immutable/chunks/index.a2cc6748.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
-			__memo(() => import('./nodes/0.js')),
-			__memo(() => import('./nodes/1.js')),
-			__memo(() => import('./nodes/2.js')),
-			__memo(() => import('./nodes/3.js')),
-			__memo(() => import('./nodes/4.js')),
-			__memo(() => import('./nodes/5.js')),
-			__memo(() => import('./nodes/6.js')),
-			__memo(() => import('./nodes/7.js')),
-			__memo(() => import('./nodes/8.js')),
-			__memo(() => import('./nodes/9.js'))
+			__memo(() => import('../server/nodes/0.js')),
+			__memo(() => import('../server/nodes/1.js')),
+			__memo(() => import('../server/nodes/2.js')),
+			__memo(() => import('../server/nodes/3.js')),
+			__memo(() => import('../server/nodes/4.js')),
+			__memo(() => import('../server/nodes/5.js')),
+			__memo(() => import('../server/nodes/6.js')),
+			__memo(() => import('../server/nodes/7.js')),
+			__memo(() => import('../server/nodes/8.js')),
+			__memo(() => import('../server/nodes/9.js'))
 		],
 		routes: [
 			{
@@ -87,4 +89,4 @@ return {
 		}
 	}
 }
-})();
+})());

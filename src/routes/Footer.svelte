@@ -30,6 +30,7 @@
 <style>
 	footer {
 		background-color: var(--black-blue);
+		margin-top: auto;
 	}
 
 	.footer-grid {

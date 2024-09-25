@@ -1,8 +1,6 @@
 <script>
 	import Contact from './Contact.svelte';
-	import testimonialData from './data/testimonialData';
-	// const currentYear = new Date().getFullYear(); //variable containing current year
-	// document.getElementById('currentYear').innerHTML = currentYear; //set specified HTML element to currentYear variable
+	import Testimonials from './Testimonials.svelte';
 </script>
 
 <header>
@@ -20,7 +18,7 @@
 					<a class="is-secondary" href="/work">Our Work</a>
 				</div>
 			</div>
-			<img src="/images/flowga-portfolio.png" alt="Flowga studios screenshots" />
+			<img src="/images/home-hero.png" alt="Dove Design Portfolio screenshots" />
 		</div>
 	</div>
 </header>
@@ -160,33 +158,7 @@
 	</div>
 </section>
 
-<section>
-	<div class="container">
-		<h2>Happy Clients</h2>
-		<p>Hear what our clients have to say about our Webflow services</p>
-		<div class="grid-col-2 testimonials">
-			{#each testimonialData as testimonial}
-				<div>
-					<div class="star-wrap">
-						<img src="/images/star.svg" alt="blue star" />
-						<img src="/images/star.svg" alt="blue star" />
-						<img src="/images/star.svg" alt="blue star" />
-						<img src="/images/star.svg" alt="blue star" />
-						<img src="/images/star.svg" alt="blue star" />
-					</div>
-					<p>{testimonial.quote}</p>
-					<div class="testimonial-item">
-						<img src={testimonial.crest} alt="Community Peer Mentors Logo" />
-						<div class="testimonial-text">
-							<p class="bold">{testimonial.name}</p>
-							<p>{testimonial.title}</p>
-						</div>
-					</div>
-				</div>
-			{/each}
-		</div>
-	</div>
-</section>
+<Testimonials />
 
 <Contact />
 
@@ -194,7 +166,7 @@
 	header {
 		position: relative;
 		padding: 4rem 0;
-		height: 100vh;
+		/* height: 100vh; */
 		overflow: hidden;
 	}
 
@@ -211,11 +183,9 @@
 	}
 
 	header img {
-		position: absolute;
-		left: 550px;
-		top: 50px;
 		height: 100%;
-		/* width: 100%; */
+		width: 100%;
+		overflow: hidden;
 	}
 
 	.button-wrap {
@@ -274,33 +244,6 @@
 
 	.z-index {
 		z-index: 10;
-	}
-
-	.testimonials {
-		margin: 2rem 0 0 0;
-	}
-
-	.testimonial-item {
-		display: flex;
-		gap: 1rem;
-		margin: 2rem 0;
-	}
-
-	.testimonial-item .bold {
-		font-weight: 700;
-	}
-
-	.testimonial-item img {
-		width: 56px;
-		height: 56px;
-	}
-
-	.star-wrap {
-		margin: 2rem 0;
-	}
-
-	.star-wrap img {
-		width: 24px;
 	}
 
 	@media screen and (max-width: 961px) {

@@ -1,11 +1,12 @@
 <script>
 	import projectData from '../data/projectData';
+	import Testimonials from '../Testimonials.svelte';
 </script>
 
 <section>
-	<div class="conatiner">
+	<div class="container">
 		<h1>Our Work</h1>
-		<div class="grid-col-2" />
+		<div class="work-wrapper" />
 		{#each projectData as projects}
 			<div class="grid-col-2">
 				<div>
@@ -21,14 +22,28 @@
 						{/each}
 					</div>
 					<p>{projects.kicker}</p>
-					<button>View Project</button>
+					<a href={projects.link} rel="noopener noreferrer">
+						<button>View Project</button>
+					</a>
 				</div>
 			</div>
 		{/each}
 	</div>
 </section>
 
+<Testimonials />
+
 <style>
+	.work-wrapper {
+		margin: 2rem 0;
+	}
+
+	.grid-col-2 {
+		margin: 3rem 0;
+		padding-bottom: 3rem;
+		border-bottom: 0.5px solid var(--black-blue);
+	}
+
 	.portfolio-image {
 		width: 100%;
 		height: 100%;

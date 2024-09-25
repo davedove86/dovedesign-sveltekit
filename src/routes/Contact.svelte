@@ -4,26 +4,6 @@
 		<h2>How can we help?</h2>
 		<p>We're here to answer any questions you may have. Contact us today!</p>
 		<div class="grid-col-2">
-			<!-- <form name="contact" method="POST" data-netlify="true">
-				<div>
-					<label for="name">Name</label>
-					<input name="name" type="text" placeholder="Name" />
-				</div>
-				<div>
-					<label for="email">Email</label>
-					<input name="email" type="email" placeholder="Email Address" />
-				</div>
-				<div>
-					<label for="phone">Phone</label>
-					<input name="phone" type="tel" placeholder="Phone Number" />
-				</div>
-				<div>
-					<label for="message">Message</label>
-					<textarea name="message" rows="10" cols="30" placeholder="Type your message..." />
-				</div>
-
-				<button type="submit">Submit</button>
-			</form> -->
 			<form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
 				<div>
 					<label for="text">Name</label>
@@ -31,6 +11,7 @@
 				</div>
 				<div>
 					<label for="email">Email</label>
+					<!-- TODO add a default subject -->
 					<input id="email" type="email" name="email" placeholder="Email" required />
 				</div>
 				<div>
@@ -42,7 +23,7 @@
 					<textarea id="textarea" type="textarea" name="message" placeholder="Message" required />
 				</div>
 				<div data-netlify-recaptcha="true" />
-				<button type="submit">Send</button>
+				<button type="submit">Submit Form</button>
 			</form>
 
 			<div class="grid-col-2 contact-grid">
@@ -104,6 +85,11 @@
 	form input::placeholder,
 	textarea::placeholder {
 		color: var(--light-grey);
+	}
+
+	form button {
+		font-size: 1rem;
+		font-weight: 800;
 	}
 
 	.contact-grid {

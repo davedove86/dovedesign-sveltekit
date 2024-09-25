@@ -1,3 +1,4 @@
+import { c as create_ssr_component, d as each, e as escape } from "../../../chunks/ssr.js";
 const faqData = [
   {
     id: 1,
@@ -50,5 +51,11 @@ const faqData = [
     answer: " Our agency is distinguished by a combination of creativity, technical expertise, and a client-centric approach. We prioritise understanding your business goals, delivering high-quality solutions, and providing excellent customer service throughout the entire process."
   }
 ];
-
-export default faqData;
+const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `<section><div class="conatiner"><h1 data-svelte-h="svelte-w78x8p">FAQs</h1> <div class="grid-col-2"></div> ${each(faqData, (faqs) => {
+    return `<div class="grid-col-2"><div><h2>${escape(faqs.question)}</h2> <p>${escape(faqs.answer)}</p></div> </div>`;
+  })}</div></section>`;
+});
+export {
+  Page as default
+};
