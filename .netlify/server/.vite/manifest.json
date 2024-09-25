@@ -7,22 +7,9 @@
     "isEntry": true,
     "src": ".svelte-kit/generated/server/internal.js"
   },
-  "Contact.css": {
-    "file": "_app/immutable/assets/Contact.763fdd41.css",
-    "src": "Contact.css"
-  },
   "Testimonials.css": {
     "file": "_app/immutable/assets/Testimonials.99a445f3.css",
     "src": "Testimonials.css"
-  },
-  "_Contact.js": {
-    "css": [
-      "_app/immutable/assets/Contact.763fdd41.css"
-    ],
-    "file": "chunks/Contact.js",
-    "imports": [
-      "_ssr.js"
-    ]
   },
   "_Testimonials.js": {
     "css": [
@@ -78,32 +65,37 @@
     "src": "src/routes/+layout.svelte"
   },
   "src/routes/+page.css": {
-    "file": "_app/immutable/assets/_page.7d2150e2.css",
+    "file": "_app/immutable/assets/_page.7d7f40e0.css",
     "src": "src/routes/+page.css"
-  },
-  "src/routes/+page.js": {
-    "file": "entries/pages/_page.js",
-    "isEntry": true,
-    "src": "src/routes/+page.js"
   },
   "src/routes/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.7d2150e2.css"
+      "_app/immutable/assets/_page.7d7f40e0.css"
     ],
     "file": "entries/pages/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_Contact.js",
       "_Testimonials.js"
     ],
     "isEntry": true,
     "src": "src/routes/+page.svelte"
   },
+  "src/routes/contact/+page.css": {
+    "file": "_app/immutable/assets/_page.5c972dbe.css",
+    "src": "src/routes/contact/+page.css"
+  },
+  "src/routes/contact/+page.js": {
+    "file": "entries/pages/contact/_page.js",
+    "isEntry": true,
+    "src": "src/routes/contact/+page.js"
+  },
   "src/routes/contact/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.5c972dbe.css"
+    ],
     "file": "entries/pages/contact/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_Contact.js",
       "_Testimonials.js"
     ],
     "isEntry": true,
