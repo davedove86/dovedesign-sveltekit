@@ -1,4 +1,4 @@
-import { c as create_ssr_component, d as each, e as escape } from "../../../chunks/ssr.js";
+import { c as create_ssr_component, f as each, e as escape } from "../../../chunks/ssr.js";
 const faqData = [
   {
     id: 1,
@@ -51,10 +51,16 @@ const faqData = [
     answer: " Our agency is distinguished by a combination of creativity, technical expertise, and a client-centric approach. We prioritise understanding your business goals, delivering high-quality solutions, and providing excellent customer service throughout the entire process."
   }
 ];
+const _page_svelte_svelte_type_style_lang = "";
+const css = {
+  code: ".container.svelte-i59kdj.svelte-i59kdj{display:flex;flex-direction:column;align-items:center}.grid-col-2.svelte-i59kdj.svelte-i59kdj{display:flex;max-width:800px;margin:0 auto}h1.svelte-i59kdj.svelte-i59kdj{margin-bottom:2rem}.faq-wrap.svelte-i59kdj.svelte-i59kdj{margin-bottom:2rem}.faq-wrap.svelte-i59kdj h2.svelte-i59kdj{margin-bottom:1rem;font-size:2rem}.faq-wrap.svelte-i59kdj p.svelte-i59kdj{margin-bottom:2rem}",
+  map: null
+};
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<section><div class="conatiner"><h1 data-svelte-h="svelte-w78x8p">FAQs</h1> <div class="grid-col-2"></div> ${each(faqData, (faqs) => {
-    return `<div class="grid-col-2"><div><h2>${escape(faqs.question)}</h2> <p>${escape(faqs.answer)}</p></div> </div>`;
-  })}</div></section>`;
+  $$result.css.add(css);
+  return `<section><div class="container svelte-i59kdj"><h1 class="svelte-i59kdj" data-svelte-h="svelte-w78x8p">FAQs</h1> <div class="grid-col-2 svelte-i59kdj"></div> ${each(faqData, (faqs) => {
+    return `<div class="grid-col-2 svelte-i59kdj"><div class="faq-wrap svelte-i59kdj"><h2 class="svelte-i59kdj">${escape(faqs.question)}</h2> <p class="svelte-i59kdj">${escape(faqs.answer)}</p></div> </div>`;
+  })}</div> </section>`;
 });
 export {
   Page as default

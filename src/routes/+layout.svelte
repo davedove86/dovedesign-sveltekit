@@ -5,7 +5,6 @@
 </script>
 
 <Navbar />
-<!-- <Header /> -->
 
 <main>
 	<slot />

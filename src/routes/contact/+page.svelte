@@ -16,12 +16,11 @@
 				</div>
 				<div>
 					<label for="email">Email</label>
-					<!-- TODO add a default subject -->
 					<input id="email" type="email" name="email" placeholder="Email" required />
 				</div>
 				<div>
 					<label for="phone">Phone</label>
-					<input id="phone" type="Phone" name="phone" placeholder="Phone" />
+					<input id="phone" type="tel" name="phone" placeholder="Phone" />
 				</div>
 				<div>
 					<label for="textarea">Message</label>

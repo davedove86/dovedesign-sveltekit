@@ -1,4 +1,4 @@
-import { c as create_ssr_component, d as each, e as escape, f as add_attribute } from "./ssr.js";
+import { c as create_ssr_component, f as each, e as escape, b as add_attribute } from "./ssr.js";
 const testimonials = [
   {
     id: 1,

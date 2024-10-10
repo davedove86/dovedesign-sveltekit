@@ -1,8 +1,12 @@
+<script>
+	import Logo from '/images/nav/logo-only.svg';
+</script>
+
 <nav>
 	<div class="container">
 		<div class="navbar-flex">
 			<a href="/">
-				<img src="./images/nav/logo-only.svg" alt="Dove Design Ltd Logo" />
+				<img src={Logo} alt="Dove Design Ltd Logo" />
 			</a>
 			<div class="nav-items">
 				<ul>
@@ -15,8 +19,9 @@
 					<a href="/contact">
 						<li>Contact</li>
 					</a>
-
-					<button>Schedule a call</button>
+					<!-- <a href="https://calendly.com/dovedesign/30min">
+						<button>Schedule a call</button>
+					</a> -->
 				</ul>
 			</div>
 		</div>

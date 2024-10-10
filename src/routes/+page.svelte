@@ -1,7 +1,16 @@
 <script>
 	import Contact from './Contact.svelte';
 	import Testimonials from './Testimonials.svelte';
+	export let title = 'Dove Design Ltd | Home';
+	export let description =
+		'Test At Dove Design, we specialise in creating visually appealing and highly functional websites that help businesses succeed online.';
+	// export let image = "https://example.com/your-logo.png”;
 </script>
+
+<svelte:head>
+	<title>{title}</title>
+	<meta name="description" content={description} />
+</svelte:head>
 
 <header>
 	<div class="container">
@@ -9,12 +18,12 @@
 			<div class="home-hero-text">
 				<h1>Transforming businesses with <span>stunning websites</span></h1>
 				<p>
-					At Dove Design, we specialise in creating visually appealing and highly functional Webflow
+					At Dove Design, we specialise in creating visually appealing and highly functional
 					websites that help businesses succeed online. Our team of experts combines design and
 					technology to deliver exceptional user experiences.
 				</p>
 				<div class="button-wrap">
-					<a class="button" href="/">Schedule a Call</a>
+					<a class="button" href="/contact">Contact Us</a>
 					<a class="is-secondary" href="/work">Our Work</a>
 				</div>
 			</div>
@@ -31,8 +40,8 @@
 				<h2>Experts in Web <span>Design</span> & Web <span>Development</span></h2>
 				<p>
 					At Dove Design, we offer a range of services to help businesses succeed online. Our team
-					of experts specialises in Webflow design, development, and maintenance, ensuring that your
-					website is visually stunning, user-friendly, and always up to date.
+					of experts specialises in design, development, and maintenance, ensuring that your website
+					is visually stunning, user-friendly, and always up to date.
 				</p>
 				<p>
 					Whether you need a brand new website or want to enhance your existing one, we have the
@@ -51,16 +60,16 @@
 						<img src="/images/responsive.svg" alt="responsive web design" />
 						<h3>Web Development</h3>
 						<p>
-							We harness the power of Webflow's no-code platform to build websites that are not only
-							visually appealing but also incredibly responsive and easy to manage.
+							We bring your website to life with custom development solutions that are tailored to
+							your business needs and objectives.
 						</p>
 					</div>
 					<div class="icon-item-wrapper">
 						<img src="/images/hosting.svg" alt="hosting websites" />
 						<h3>Website Hosting</h3>
 						<p>
-							Enjoy the fastest, most scalable hosting technology for your business powered by
-							Amazon Web Services.
+							Enjoy the fastest, most scalable hosting technology for your business powered by super
+							fast web services.
 						</p>
 					</div>
 					<div class="icon-item-wrapper">
@@ -74,6 +83,7 @@
 				</div>
 				<a class="button" href="/contact">Contact us</a>
 			</div>
+			<!-- Change image to not Webflow -->
 			<img class="grid-image" src="/images/section-image.webp" alt="Flowga studios screenshots" />
 		</div>
 	</div>
@@ -154,7 +164,9 @@
 	<div class="container z-index">
 		<h2>Web Design Experts</h2>
 		<p>Empower Your Online Identity with Tailored Design Magic</p>
-		<button class="is-secondary">View Our Work</button>
+		<a href="/work">
+			<button class="is-secondary">View Our Work</button>
+		</a>
 	</div>
 </section>
 
@@ -164,15 +176,15 @@
 
 <style>
 	header {
-		position: relative;
-		padding: 4rem 0;
-		/* height: 100vh; */
 		overflow: hidden;
+		height: 100vh;
+		max-height: 800px;
 	}
 
 	.home-hero {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		align-items: center;
 	}
 
 	.home-hero-text {
@@ -192,8 +204,12 @@
 		display: flex;
 		align-items: center;
 		gap: 1rem;
+		margin-top: 3rem;
 	}
 
+	.button-wrap a {
+		margin-top: 0;
+	}
 	.grid-image {
 		width: 100%;
 		max-width: 635px;
@@ -244,6 +260,10 @@
 
 	.z-index {
 		z-index: 10;
+	}
+
+	.is-secondary {
+		margin-top: 2rem;
 	}
 
 	@media screen and (max-width: 961px) {

@@ -106,7 +106,7 @@ const options = {
   root: Root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n\n<head>\n  <meta charset="utf-8" />\n\n  <!-- Favicons -->\n  <link rel="icon" href="' + assets2 + '/favicon.ico" />\n  <link rel="apple-touch-icon" sizes="180x180" href="' + assets2 + '/apple-touch-icon.png">\n  <link rel="icon" type="image/png" sizes="32x32" href="' + assets2 + '/favicon-32x32.png">\n  <link rel="icon" type="image/png" sizes="16x16" href="' + assets2 + '/favicon-16x16.png">\n  <link rel="manifest" href="' + assets2 + '/site.webmanifest">\n  <link rel="mask-icon" href="' + assets2 + '/safari-pinned-tab.svg" color="#2f65e5">\n  <meta name="msapplication-TileColor" content="#ffffff">\n  <meta name="theme-color" content="#ffffff">\n  <meta name="viewport" content="width=device-width, initial-scale=1" />\n\n  <!-- Google Fonts -->\n  <link rel="preconnect" href="https://fonts.googleapis.com">\n  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">\n\n  <title>Web Design Agency | Dove Design</title>\n  ' + head + '\n</head>\n\n<body data-sveltekit-preload-data="hover">\n  <div style="display: contents">' + body + "</div>\n</body>\n\n</html>\n",
+    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n\n		<!-- Favicons -->\n		<link rel="icon" href="' + assets2 + '/favicon.ico" />\n		<link rel="apple-touch-icon" sizes="180x180" href="' + assets2 + '/apple-touch-icon.png" />\n		<link rel="icon" type="image/png" sizes="32x32" href="' + assets2 + '/favicon-32x32.png" />\n		<link rel="icon" type="image/png" sizes="16x16" href="' + assets2 + '/favicon-16x16.png" />\n		<link rel="manifest" href="' + assets2 + '/site.webmanifest" />\n		<link rel="mask-icon" href="' + assets2 + '/safari-pinned-tab.svg" color="#2f65e5" />\n		<meta name="msapplication-TileColor" content="#ffffff" />\n		<meta name="theme-color" content="#ffffff" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n\n		<!-- Google Fonts -->\n		<link rel="preconnect" href="https://fonts.googleapis.com" />\n		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />\n		<link\n			href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"\n			rel="stylesheet"\n		/>\n\n		<title>Web Design Agency | Dove Design</title>\n		' + head + '\n	</head>\n\n	<body data-sveltekit-preload-data="hover">\n		<div style="display: contents">' + body + "</div>\n	</body>\n</html>\n",
     error: ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -168,7 +168,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "vplpox"
+  version_hash: "14nvsz8"
 };
 function get_hooks() {
   return {};

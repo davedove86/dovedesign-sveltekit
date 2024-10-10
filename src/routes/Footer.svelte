@@ -1,9 +1,12 @@
 <footer>
 	<div class="container">
 		<div class="footer-grid">
-			<img src="/images/footer-logo.svg" alt="Dove Design Logo" />
+			<a href="/"><img src="/images/footer-logo.svg" alt="Dove Design Logo" /></a>
 			<div>
 				<ul>
+					<a href="/">
+						<li>Home</li>
+					</a>
 					<a href="/work">
 						<li>Our Work</li>
 					</a>

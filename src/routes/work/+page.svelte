@@ -1,5 +1,5 @@
 <script>
-	import projectData from '../data/projectData';
+	import projects from '../data/projectData';
 	import Testimonials from '../Testimonials.svelte';
 </script>
 
@@ -7,22 +7,22 @@
 	<div class="container">
 		<h1>Our Work</h1>
 		<div class="work-wrapper" />
-		{#each projectData as projects}
+		{#each projects as project}
 			<div class="grid-col-2">
 				<div>
-					<img class="portfolio-image" src={projects.image} alt="{projects.name} website" />
+					<img class="portfolio-image" src={project.image} alt="{project.name} website" />
 				</div>
 				<div>
-					<h2>{projects.name}</h2>
+					<h2>{project.name}</h2>
 					<div class="tags-wrapper">
-						{#each projects.tags as tag}
+						{#each project.tags as tag}
 							<div class="tags">
 								<p>{tag}</p>
 							</div>
 						{/each}
 					</div>
-					<p>{projects.kicker}</p>
-					<a href={projects.link} rel="noopener noreferrer">
+					<p>{project.kicker}</p>
+					<a href={project.link} rel="noopener noreferrer">
 						<button>View Project</button>
 					</a>
 				</div>
@@ -42,6 +42,10 @@
 		margin: 3rem 0;
 		padding-bottom: 3rem;
 		border-bottom: 0.5px solid var(--black-blue);
+	}
+
+	h2 {
+		font-size: 2rem;
 	}
 
 	.portfolio-image {

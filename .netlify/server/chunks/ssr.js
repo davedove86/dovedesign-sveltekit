@@ -123,11 +123,11 @@ function add_attribute(name, value, boolean) {
 }
 export {
   setContext as a,
-  subscribe as b,
+  add_attribute as b,
   create_ssr_component as c,
-  each as d,
+  subscribe as d,
   escape as e,
-  add_attribute as f,
+  each as f,
   getContext as g,
   missing_component as m,
   noop as n,

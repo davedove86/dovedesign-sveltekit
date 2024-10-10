@@ -1,4 +1,5 @@
-import { c as create_ssr_component, v as validate_component } from "../../chunks/ssr.js";
+import { c as create_ssr_component, b as add_attribute, v as validate_component } from "../../chunks/ssr.js";
+const Logo = "/images/nav/logo-only.svg";
 const Navbar_svelte_svelte_type_style_lang = "";
 const css$1 = {
   code: "nav.svelte-arv51z.svelte-arv51z{width:100%;background-color:var(--white);padding:1rem 0;box-shadow:var(--box-shadow)}.navbar-flex.svelte-arv51z.svelte-arv51z{display:flex;justify-content:space-between;align-items:center;width:100%}.navbar-flex.svelte-arv51z img.svelte-arv51z{width:63px}.nav-items.svelte-arv51z ul.svelte-arv51z{display:flex;align-items:center;list-style-type:none}.nav-items.svelte-arv51z ul a.svelte-arv51z{text-decoration:none}.nav-items.svelte-arv51z ul a li.svelte-arv51z{color:var(--black);padding:0.5rem 1rem}@media(max-width: 760px){.navbar-flex.svelte-arv51z.svelte-arv51z{flex-direction:column;gap:1rem}.nav-items.svelte-arv51z ul.svelte-arv51z{flex-wrap:wrap;justify-content:center}}",
@@ -6,7 +7,7 @@ const css$1 = {
 };
 const Navbar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
-  return `<nav class="svelte-arv51z" data-svelte-h="svelte-95prrq"><div class="container"><div class="navbar-flex svelte-arv51z"><a href="/"><img src="./images/nav/logo-only.svg" alt="Dove Design Ltd Logo" class="svelte-arv51z"></a> <div class="nav-items svelte-arv51z"><ul class="svelte-arv51z"><a href="/work" class="svelte-arv51z"><li class="svelte-arv51z">Our Work</li></a> <a href="/faq" class="svelte-arv51z"><li class="svelte-arv51z">FAQs</li></a> <a href="/contact" class="svelte-arv51z"><li class="svelte-arv51z">Contact</li></a> <button>Schedule a call</button></ul></div></div></div> </nav>`;
+  return `<nav class="svelte-arv51z" data-svelte-h="svelte-jcxr4v"><div class="container"><div class="navbar-flex svelte-arv51z"><a href="/"><img${add_attribute("src", Logo, 0)} alt="Dove Design Ltd Logo" class="svelte-arv51z"></a> <div class="nav-items svelte-arv51z"><ul class="svelte-arv51z"><a href="/work" class="svelte-arv51z"><li class="svelte-arv51z">Our Work</li></a> <a href="/faq" class="svelte-arv51z"><li class="svelte-arv51z">FAQs</li></a> <a href="/contact" class="svelte-arv51z"><li class="svelte-arv51z">Contact</li></a> </ul></div></div></div> </nav>`;
 });
 const Footer_svelte_svelte_type_style_lang = "";
 const css = {
@@ -15,11 +16,11 @@ const css = {
 };
 const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<footer class="svelte-cu9yku" data-svelte-h="svelte-1hhu7dk"><div class="container"><div class="footer-grid svelte-cu9yku"><img src="/images/footer-logo.svg" alt="Dove Design Logo"> <div><ul class="svelte-cu9yku"><a href="/work" class="svelte-cu9yku"><li class="svelte-cu9yku">Our Work</li></a> <a href="/faq" class="svelte-cu9yku"><li class="svelte-cu9yku">FAQs</li></a> <a href="/contact" class="svelte-cu9yku"><li class="svelte-cu9yku">Contact</li></a></ul></div> <a href="https://www.linkedin.com/company/dovedesignweb/" target="_blank" class="svelte-cu9yku"><img src="/images/linkedin-footer.svg" alt="" class="svelte-cu9yku"></a></div> <div class="center-align-grid svelte-cu9yku"><p class="svelte-cu9yku">©<span id="currentYear">2024</span> Dove Design Ltd</p> <a href="/" target="_blank" class="svelte-cu9yku"><p class="svelte-cu9yku">Privacy Policy</p></a> <a href="/" target="_blank" class="svelte-cu9yku">Cookies Policy</a></div></div> </footer>`;
+  return `<footer class="svelte-cu9yku" data-svelte-h="svelte-1diakjk"><div class="container"><div class="footer-grid svelte-cu9yku"><a href="/" class="svelte-cu9yku"><img src="/images/footer-logo.svg" alt="Dove Design Logo" class="svelte-cu9yku"></a> <div><ul class="svelte-cu9yku"><a href="/" class="svelte-cu9yku"><li class="svelte-cu9yku">Home</li></a> <a href="/work" class="svelte-cu9yku"><li class="svelte-cu9yku">Our Work</li></a> <a href="/faq" class="svelte-cu9yku"><li class="svelte-cu9yku">FAQs</li></a> <a href="/contact" class="svelte-cu9yku"><li class="svelte-cu9yku">Contact</li></a></ul></div> <a href="https://www.linkedin.com/company/dovedesignweb/" target="_blank" class="svelte-cu9yku"><img src="/images/linkedin-footer.svg" alt="" class="svelte-cu9yku"></a></div> <div class="center-align-grid svelte-cu9yku"><p class="svelte-cu9yku">©<span id="currentYear">2024</span> Dove Design Ltd</p> <a href="/" target="_blank" class="svelte-cu9yku"><p class="svelte-cu9yku">Privacy Policy</p></a> <a href="/" target="_blank" class="svelte-cu9yku">Cookies Policy</a></div></div> </footer>`;
 });
 const styles = "";
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Navbar, "Navbar").$$render($$result, {}, {}, {})}  <main>${slots.default ? slots.default({}) : ``}</main> ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}`;
+  return `${validate_component(Navbar, "Navbar").$$render($$result, {}, {}, {})} <main>${slots.default ? slots.default({}) : ``}</main> ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}`;
 });
 export {
   Layout as default
